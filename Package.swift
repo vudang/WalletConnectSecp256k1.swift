@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "secp256k1",
+    name: "WalletConnectSecp256k1",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "secp256k1",
-            targets: ["secp256k1"]),
+            name: "WalletConnectSecp256k1",
+            targets: ["WalletConnectSecp256k1"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -57,7 +57,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "secp256k1",
+            name: "WalletConnectSecp256k1",
             dependencies: ["libsecp256k1"],
             path: "./secp256k1/Classes/exporter",
             sources: ["."])
